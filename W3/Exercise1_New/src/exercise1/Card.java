@@ -1,7 +1,7 @@
 package exercise1;
 
 /**
- * //Upload 1
+ * //Upload 2
  * 
  * A class that models playing card Objects. Cards have 
  * a value (note that Ace = 1, Jack = 11, Queen = 12, King = 13)
@@ -12,7 +12,7 @@ package exercise1;
  * @author dancye
  * @author Paul Bonenfant May 2020
  */
-public class Card {
+public class Card { 
 
    private String suit; //clubs, spades, diamonds, hearts
    private int value;//1-13
