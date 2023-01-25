@@ -17,39 +17,35 @@ public class CardTrick {
             card.setValue((int)(1+Math.random()*13));
          
             hand[i] = card;
-           // System.out.println(hand[i].getSuit() +" "+ hand[i].getValue());
+           System.out.println(hand[i].getSuit() +" "+ hand[i].getValue());
         }
 
         // Asking users to guesstehir cards
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter number of the card from 1 to 13");
+        System.out.println("Enter number of the card from 1 to 13 ");
         int num = input.nextInt();
         System.out.println("Enter suit of the card");
         String suit=input.next();
         
         boolean pointer=true;
-        
        
         for(int l=0;l<hand.length;l++){
             if(num==hand[l].getValue() && suit.equals(hand[l].getSuit())){
                 System.out.println("Guessed correct");
                 pointer = true;
-                
+                      
             }
             else {
                 pointer = false;
             }
         }
         if(pointer == false){
-        System.out.println("Guessed wrong");
+            System.out.println("Guessed wrong");
         }
     }
 
     /**
-     * A simple method to print out personal information. Follow the
-     * instructions to replace this information with your own.
-     *
-     * @author Paul Bonenfant Jan 2022
+     * @author Aryan Rana
      */
     private static void printInfo() {
 
