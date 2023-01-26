@@ -29,18 +29,20 @@ public class CardTrick {
         
         boolean pointer=true;
        
-        for(int l=0;l<hand.length;l++){
-            if(num==hand[l].getValue() && suit.equals(hand[l].getSuit())){
-                System.out.println("Guessed correct");
+        for (Card hand1 : hand) {
+            if (num == hand1.getValue() && suit.equals(hand1.getSuit())) {
                 pointer = true;
-                      
-            }
-            else {
+                System.out.println("Guessed correct");
+                break;
+                
+            } else {
                 pointer = false;
             }
         }
-        if(pointer == false){
-            System.out.println("Guessed wrong");
+            if(pointer == false){
+                System.out.println("Guessed wrong Suit/Number");
+                
+            
         }
     }
 
